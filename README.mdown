@@ -16,6 +16,14 @@ Check Example project
 
 Documentation not ready yet
 
+Other  
+============
+  
+  Qiuck merge several projects.
+  Steel need refactoring and improvements  
+  
+  
+
 Licence  
 ============
   Marine Weather  
