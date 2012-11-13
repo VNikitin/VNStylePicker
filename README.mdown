@@ -1,6 +1,5 @@
 VNStylePicker
 =============
-
 Font, color, width options picker for iPad
 
 Screens  
@@ -19,8 +18,8 @@ Documentation not ready yet
 Other  
 ============
   
-  Qiuck merge several projects.
-  Steel need refactoring and improvements  
+  Qiuck merge several projects.   
+  Steel need refactoring and improvements   
   
   
 
