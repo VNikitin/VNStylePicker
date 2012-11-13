@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE0400031652A6F900D98CAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0400021652A6F900D98CAC /* QuartzCore.framework */; };
+		DE0400041652A81C00D98CAC /* libOptionsPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE04FFC31652A53A00D98CAC /* libOptionsPicker.a */; };
+		DE04FF9D1652A50C00D98CAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE04FF9C1652A50C00D98CAC /* UIKit.framework */; };
+		DE04FF9F1652A50C00D98CAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE04FF9E1652A50C00D98CAC /* Foundation.framework */; };
+		DE04FFA11652A50C00D98CAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE04FFA01652A50C00D98CAC /* CoreGraphics.framework */; };
+		DE04FFA71652A50C00D98CAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE04FFA51652A50C00D98CAC /* InfoPlist.strings */; };
+		DE04FFA91652A50C00D98CAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFA81652A50C00D98CAC /* main.m */; };
+		DE04FFAD1652A50C00D98CAC /* VNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFAC1652A50C00D98CAC /* VNAppDelegate.m */; };
+		DE04FFAF1652A50C00D98CAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04FFAE1652A50C00D98CAC /* Default.png */; };
+		DE04FFB11652A50C00D98CAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04FFB01652A50C00D98CAC /* Default@2x.png */; };
+		DE04FFB31652A50C00D98CAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04FFB21652A50C00D98CAC /* Default-568h@2x.png */; };
+		DE04FFC41652A53A00D98CAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE04FF9E1652A50C00D98CAC /* Foundation.framework */; };
+		DE04FFD21652A57A00D98CAC /* CMUpDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFD11652A57A00D98CAC /* CMUpDownControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DE04FFD71652A58B00D98CAC /* VNLineExampleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFD41652A58B00D98CAC /* VNLineExampleImage.m */; };
+		DE04FFD81652A58B00D98CAC /* VNTextGraphicsOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFD61652A58B00D98CAC /* VNTextGraphicsOptionsView.m */; };
+		DE04FFEC1652A59700D98CAC /* GzColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFDD1652A59700D98CAC /* GzColors.m */; };
+		DE04FFED1652A59700D98CAC /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFDF1652A59700D98CAC /* HRBrightnessCursor.m */; };
+		DE04FFEE1652A59700D98CAC /* HRCgUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFE11652A59700D98CAC /* HRCgUtil.m */; };
+		DE04FFEF1652A59700D98CAC /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFE31652A59700D98CAC /* HRColorCursor.m */; };
+		DE04FFF01652A59700D98CAC /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFE61652A59700D98CAC /* HRColorPickerView.m */; };
+		DE04FFF21652A59700D98CAC /* HRColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFEA1652A59700D98CAC /* HRColorUtil.m */; };
+		DE04FFF51652A5BA00D98CAC /* VNButtonBarBrush.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04FFF31652A5BA00D98CAC /* VNButtonBarBrush.png */; };
+		DE04FFF61652A5BA00D98CAC /* VNButtonBarBrush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04FFF41652A5BA00D98CAC /* VNButtonBarBrush@2x.png */; };
+		DE04FFF91652A5C900D98CAC /* VNDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFF81652A5C900D98CAC /* VNDemoVC.m */; };
+		DE04FFFE1652A5FD00D98CAC /* CMFontSelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFFB1652A5FD00D98CAC /* CMFontSelectTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DE04FFFF1652A5FD00D98CAC /* CMFontStyleSelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FFFD1652A5FD00D98CAC /* CMFontStyleSelectTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE0400001652A6F000D98CAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE04FF8F1652A50C00D98CAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE04FFC21652A53A00D98CAC;
+			remoteInfo = OptionsPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE04FFC11652A53A00D98CAC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE0400021652A6F900D98CAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DE04FF981652A50C00D98CAC /* VNOptionsPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VNOptionsPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE04FF9C1652A50C00D98CAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DE04FF9E1652A50C00D98CAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DE04FFA01652A50C00D98CAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE04FFA41652A50C00D98CAC /* VNOptionsPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VNOptionsPicker-Info.plist"; sourceTree = "<group>"; };
+		DE04FFA61652A50C00D98CAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE04FFA81652A50C00D98CAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE04FFAA1652A50C00D98CAC /* VNOptionsPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VNOptionsPicker-Prefix.pch"; sourceTree = "<group>"; };
+		DE04FFAB1652A50C00D98CAC /* VNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VNAppDelegate.h; sourceTree = "<group>"; };
+		DE04FFAC1652A50C00D98CAC /* VNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VNAppDelegate.m; sourceTree = "<group>"; };
+		DE04FFAE1652A50C00D98CAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DE04FFB01652A50C00D98CAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DE04FFB21652A50C00D98CAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DE04FFC31652A53A00D98CAC /* libOptionsPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOptionsPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE04FFC71652A53A00D98CAC /* OptionsPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OptionsPicker-Prefix.pch"; sourceTree = "<group>"; };
+		DE04FFD01652A57A00D98CAC /* CMUpDownControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMUpDownControl.h; sourceTree = "<group>"; };
+		DE04FFD11652A57A00D98CAC /* CMUpDownControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMUpDownControl.m; sourceTree = "<group>"; };
+		DE04FFD31652A58B00D98CAC /* VNLineExampleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VNLineExampleImage.h; sourceTree = "<group>"; };
+		DE04FFD41652A58B00D98CAC /* VNLineExampleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNLineExampleImage.m; sourceTree = "<group>"; };
+		DE04FFD51652A58B00D98CAC /* VNTextGraphicsOptionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VNTextGraphicsOptionsView.h; sourceTree = "<group>"; };
+		DE04FFD61652A58B00D98CAC /* VNTextGraphicsOptionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNTextGraphicsOptionsView.m; sourceTree = "<group>"; };
+		DE04FFDC1652A59700D98CAC /* GzColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GzColors.h; sourceTree = "<group>"; };
+		DE04FFDD1652A59700D98CAC /* GzColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GzColors.m; sourceTree = "<group>"; };
+		DE04FFDE1652A59700D98CAC /* HRBrightnessCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRBrightnessCursor.h; sourceTree = "<group>"; };
+		DE04FFDF1652A59700D98CAC /* HRBrightnessCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRBrightnessCursor.m; sourceTree = "<group>"; };
+		DE04FFE01652A59700D98CAC /* HRCgUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCgUtil.h; sourceTree = "<group>"; };
+		DE04FFE11652A59700D98CAC /* HRCgUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCgUtil.m; sourceTree = "<group>"; };
+		DE04FFE21652A59700D98CAC /* HRColorCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorCursor.h; sourceTree = "<group>"; };
+		DE04FFE31652A59700D98CAC /* HRColorCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorCursor.m; sourceTree = "<group>"; };
+		DE04FFE41652A59700D98CAC /* HRColorPickerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPickerMacros.h; sourceTree = "<group>"; };
+		DE04FFE51652A59700D98CAC /* HRColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPickerView.h; sourceTree = "<group>"; };
+		DE04FFE61652A59700D98CAC /* HRColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorPickerView.m; sourceTree = "<group>"; };
+		DE04FFE91652A59700D98CAC /* HRColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorUtil.h; sourceTree = "<group>"; };
+		DE04FFEA1652A59700D98CAC /* HRColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorUtil.m; sourceTree = "<group>"; };
+		DE04FFF31652A5BA00D98CAC /* VNButtonBarBrush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VNButtonBarBrush.png; sourceTree = "<group>"; };
+		DE04FFF41652A5BA00D98CAC /* VNButtonBarBrush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VNButtonBarBrush@2x.png"; sourceTree = "<group>"; };
+		DE04FFF71652A5C900D98CAC /* VNDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VNDemoVC.h; sourceTree = "<group>"; };
+		DE04FFF81652A5C900D98CAC /* VNDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNDemoVC.m; sourceTree = "<group>"; };
+		DE04FFFA1652A5FD00D98CAC /* CMFontSelectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontSelectTableViewController.h; sourceTree = "<group>"; };
+		DE04FFFB1652A5FD00D98CAC /* CMFontSelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontSelectTableViewController.m; sourceTree = "<group>"; };
+		DE04FFFC1652A5FD00D98CAC /* CMFontStyleSelectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontStyleSelectTableViewController.h; sourceTree = "<group>"; };
+		DE04FFFD1652A5FD00D98CAC /* CMFontStyleSelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontStyleSelectTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE04FF951652A50C00D98CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0400041652A81C00D98CAC /* libOptionsPicker.a in Frameworks */,
+				DE0400031652A6F900D98CAC /* QuartzCore.framework in Frameworks */,
+				DE04FF9D1652A50C00D98CAC /* UIKit.framework in Frameworks */,
+				DE04FF9F1652A50C00D98CAC /* Foundation.framework in Frameworks */,
+				DE04FFA11652A50C00D98CAC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE04FFC01652A53A00D98CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE04FFC41652A53A00D98CAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE04FF8D1652A50C00D98CAC = {
+			isa = PBXGroup;
+			children = (
+				DE04FFCF1652A54900D98CAC /* Classes */,
+				DE04FFA21652A50C00D98CAC /* VNOptionsPickerDemo */,
+				DE04FFC51652A53A00D98CAC /* OptionsPickerLib */,
+				DE04FF9B1652A50C00D98CAC /* Frameworks */,
+				DE04FF991652A50C00D98CAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE04FF991652A50C00D98CAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE04FF981652A50C00D98CAC /* VNOptionsPicker.app */,
+				DE04FFC31652A53A00D98CAC /* libOptionsPicker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE04FF9B1652A50C00D98CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE0400021652A6F900D98CAC /* QuartzCore.framework */,
+				DE04FF9C1652A50C00D98CAC /* UIKit.framework */,
+				DE04FF9E1652A50C00D98CAC /* Foundation.framework */,
+				DE04FFA01652A50C00D98CAC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE04FFA21652A50C00D98CAC /* VNOptionsPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE04FFF71652A5C900D98CAC /* VNDemoVC.h */,
+				DE04FFF81652A5C900D98CAC /* VNDemoVC.m */,
+				DE04FFAB1652A50C00D98CAC /* VNAppDelegate.h */,
+				DE04FFAC1652A50C00D98CAC /* VNAppDelegate.m */,
+				DE04FFA31652A50C00D98CAC /* Supporting Files */,
+			);
+			name = VNOptionsPickerDemo;
+			path = VNOptionsPicker;
+			sourceTree = "<group>";
+		};
+		DE04FFA31652A50C00D98CAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE04FFF31652A5BA00D98CAC /* VNButtonBarBrush.png */,
+				DE04FFF41652A5BA00D98CAC /* VNButtonBarBrush@2x.png */,
+				DE04FFA41652A50C00D98CAC /* VNOptionsPicker-Info.plist */,
+				DE04FFA51652A50C00D98CAC /* InfoPlist.strings */,
+				DE04FFA81652A50C00D98CAC /* main.m */,
+				DE04FFAA1652A50C00D98CAC /* VNOptionsPicker-Prefix.pch */,
+				DE04FFAE1652A50C00D98CAC /* Default.png */,
+				DE04FFB01652A50C00D98CAC /* Default@2x.png */,
+				DE04FFB21652A50C00D98CAC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE04FFC51652A53A00D98CAC /* OptionsPickerLib */ = {
+			isa = PBXGroup;
+			children = (
+				DE04FFC61652A53A00D98CAC /* Supporting Files */,
+			);
+			name = OptionsPickerLib;
+			path = OptionsPicker;
+			sourceTree = "<group>";
+		};
+		DE04FFC61652A53A00D98CAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE04FFC71652A53A00D98CAC /* OptionsPicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE04FFCF1652A54900D98CAC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DE04FFD91652A59700D98CAC /* ColorView */,
+				DE04FFD01652A57A00D98CAC /* CMUpDownControl.h */,
+				DE04FFD11652A57A00D98CAC /* CMUpDownControl.m */,
+				DE04FFFA1652A5FD00D98CAC /* CMFontSelectTableViewController.h */,
+				DE04FFFB1652A5FD00D98CAC /* CMFontSelectTableViewController.m */,
+				DE04FFFC1652A5FD00D98CAC /* CMFontStyleSelectTableViewController.h */,
+				DE04FFFD1652A5FD00D98CAC /* CMFontStyleSelectTableViewController.m */,
+				DE04FFD31652A58B00D98CAC /* VNLineExampleImage.h */,
+				DE04FFD41652A58B00D98CAC /* VNLineExampleImage.m */,
+				DE04FFD51652A58B00D98CAC /* VNTextGraphicsOptionsView.h */,
+				DE04FFD61652A58B00D98CAC /* VNTextGraphicsOptionsView.m */,
+			);
+			name = Classes;
+			path = OptionsPicker/Classes;
+			sourceTree = "<group>";
+		};
+		DE04FFD91652A59700D98CAC /* ColorView */ = {
+			isa = PBXGroup;
+			children = (
+				DE04FFDC1652A59700D98CAC /* GzColors.h */,
+				DE04FFDD1652A59700D98CAC /* GzColors.m */,
+				DE04FFDE1652A59700D98CAC /* HRBrightnessCursor.h */,
+				DE04FFDF1652A59700D98CAC /* HRBrightnessCursor.m */,
+				DE04FFE01652A59700D98CAC /* HRCgUtil.h */,
+				DE04FFE11652A59700D98CAC /* HRCgUtil.m */,
+				DE04FFE21652A59700D98CAC /* HRColorCursor.h */,
+				DE04FFE31652A59700D98CAC /* HRColorCursor.m */,
+				DE04FFE41652A59700D98CAC /* HRColorPickerMacros.h */,
+				DE04FFE51652A59700D98CAC /* HRColorPickerView.h */,
+				DE04FFE61652A59700D98CAC /* HRColorPickerView.m */,
+				DE04FFE91652A59700D98CAC /* HRColorUtil.h */,
+				DE04FFEA1652A59700D98CAC /* HRColorUtil.m */,
+			);
+			path = ColorView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE04FF971652A50C00D98CAC /* VNOptionsPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE04FFBC1652A50C00D98CAC /* Build configuration list for PBXNativeTarget "VNOptionsPicker" */;
+			buildPhases = (
+				DE04FF941652A50C00D98CAC /* Sources */,
+				DE04FF951652A50C00D98CAC /* Frameworks */,
+				DE04FF961652A50C00D98CAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE0400011652A6F000D98CAC /* PBXTargetDependency */,
+			);
+			name = VNOptionsPicker;
+			productName = VNOptionsPicker;
+			productReference = DE04FF981652A50C00D98CAC /* VNOptionsPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE04FFC21652A53A00D98CAC /* OptionsPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE04FFCC1652A53A00D98CAC /* Build configuration list for PBXNativeTarget "OptionsPicker" */;
+			buildPhases = (
+				DE04FFBF1652A53A00D98CAC /* Sources */,
+				DE04FFC01652A53A00D98CAC /* Frameworks */,
+				DE04FFC11652A53A00D98CAC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OptionsPicker;
+			productName = OptionsPicker;
+			productReference = DE04FFC31652A53A00D98CAC /* libOptionsPicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE04FF8F1652A50C00D98CAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VN;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = submarine;
+			};
+			buildConfigurationList = DE04FF921652A50C00D98CAC /* Build configuration list for PBXProject "VNOptionsPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE04FF8D1652A50C00D98CAC;
+			productRefGroup = DE04FF991652A50C00D98CAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE04FF971652A50C00D98CAC /* VNOptionsPicker */,
+				DE04FFC21652A53A00D98CAC /* OptionsPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE04FF961652A50C00D98CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE04FFA71652A50C00D98CAC /* InfoPlist.strings in Resources */,
+				DE04FFAF1652A50C00D98CAC /* Default.png in Resources */,
+				DE04FFB11652A50C00D98CAC /* Default@2x.png in Resources */,
+				DE04FFB31652A50C00D98CAC /* Default-568h@2x.png in Resources */,
+				DE04FFF51652A5BA00D98CAC /* VNButtonBarBrush.png in Resources */,
+				DE04FFF61652A5BA00D98CAC /* VNButtonBarBrush@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE04FF941652A50C00D98CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE04FFA91652A50C00D98CAC /* main.m in Sources */,
+				DE04FFAD1652A50C00D98CAC /* VNAppDelegate.m in Sources */,
+				DE04FFF91652A5C900D98CAC /* VNDemoVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE04FFBF1652A53A00D98CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE04FFD21652A57A00D98CAC /* CMUpDownControl.m in Sources */,
+				DE04FFD71652A58B00D98CAC /* VNLineExampleImage.m in Sources */,
+				DE04FFD81652A58B00D98CAC /* VNTextGraphicsOptionsView.m in Sources */,
+				DE04FFEC1652A59700D98CAC /* GzColors.m in Sources */,
+				DE04FFED1652A59700D98CAC /* HRBrightnessCursor.m in Sources */,
+				DE04FFEE1652A59700D98CAC /* HRCgUtil.m in Sources */,
+				DE04FFEF1652A59700D98CAC /* HRColorCursor.m in Sources */,
+				DE04FFF01652A59700D98CAC /* HRColorPickerView.m in Sources */,
+				DE04FFF21652A59700D98CAC /* HRColorUtil.m in Sources */,
+				DE04FFFE1652A5FD00D98CAC /* CMFontSelectTableViewController.m in Sources */,
+				DE04FFFF1652A5FD00D98CAC /* CMFontStyleSelectTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE0400011652A6F000D98CAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE04FFC21652A53A00D98CAC /* OptionsPicker */;
+			targetProxy = DE0400001652A6F000D98CAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE04FFA51652A50C00D98CAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE04FFA61652A50C00D98CAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE04FFBA1652A50C00D98CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DE04FFBB1652A50C00D98CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE04FFBD1652A50C00D98CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VNOptionsPicker/VNOptionsPicker-Prefix.pch";
+				INFOPLIST_FILE = "VNOptionsPicker/VNOptionsPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DE04FFBE1652A50C00D98CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VNOptionsPicker/VNOptionsPicker-Prefix.pch";
+				INFOPLIST_FILE = "VNOptionsPicker/VNOptionsPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DE04FFCD1652A53A00D98CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/OptionsPicker.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OptionsPicker/OptionsPicker-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DE04FFCE1652A53A00D98CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/OptionsPicker.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OptionsPicker/OptionsPicker-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE04FF921652A50C00D98CAC /* Build configuration list for PBXProject "VNOptionsPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE04FFBA1652A50C00D98CAC /* Debug */,
+				DE04FFBB1652A50C00D98CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE04FFBC1652A50C00D98CAC /* Build configuration list for PBXNativeTarget "VNOptionsPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE04FFBD1652A50C00D98CAC /* Debug */,
+				DE04FFBE1652A50C00D98CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE04FFCC1652A53A00D98CAC /* Build configuration list for PBXNativeTarget "OptionsPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE04FFCD1652A53A00D98CAC /* Debug */,
+				DE04FFCE1652A53A00D98CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE04FF8F1652A50C00D98CAC /* Project object */;
+}
