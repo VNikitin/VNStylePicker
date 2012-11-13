@@ -34,18 +34,18 @@ Licence
 //
 
 
-
-
 Based on CMTextStylePicker and Color Picker for iOS
-.....................................
+
 CMTextStylePicker
+==================
 https://github.com/OldFrank/CMTextStylePicker
 License
 CMTextStylePicker is released under the MIT license. See LICENSE for details.
-
 CMTextStylePicker is copyright (c) Chris Miles 2010.
-......................................
+
 
 Color Picker for iOS
+==================
 github.com/hayashi311/Color-Picker-for-iOS.git
 new BSD License
+
