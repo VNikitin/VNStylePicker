@@ -16,7 +16,7 @@ void HRSetRoundedRectanglePath(CGContextRef context,const CGRect rect,CGFloat ra
 + (UIImage*)solidLineWithWidth:(CGFloat)width withImageSize:(CGSize)aSize withColor:(UIColor*)aColor {
     return [[self class] solidLineWithWidth:width withImageSize:aSize withColor:aColor toolImage:nil];
 }
-+ (UIImage*)solidLineWithWidth:(CGFloat)width withImageSize:(CGSize)aSize withColor:(UIColor*)aColor toolImage:(NSString *)aToolImage {
++ (UIImage*)solidLineWithWidth:(CGFloat)width withImageSize:(CGSize)aSize withColor:(UIColor*)aColor toolImage:(UIImage *)aToolImage {
     if (CGSizeEqualToSize(aSize, CGSizeZero) || !aColor) {
         return nil;
     }
@@ -46,18 +46,15 @@ void HRSetRoundedRectanglePath(CGContextRef context,const CGRect rect,CGFloat ra
     CGContextSetShadowWithColor(context, shadowOffset, shadowBlur, cgShadowColor);
 
     //draw image and line
-    UIImage *tool = nil;
     CGRect toolFrame = CGRectZero;
 
     CGContextSetStrokeColorWithColor(context, aColor.CGColor);
     CGContextSetFillColorWithColor(context, aColor.CGColor);
     
-    if (aToolImage.length > 0) {
-        NSString *fileName = [[aToolImage lastPathComponent] stringByDeletingPathExtension];
-        tool = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:aToolImage.pathExtension]];
-        if (tool) {
+    if (aToolImage) {
+
             toolFrame = CGRectMake(floorf(aSize.width *(1-kToolImageSize)), kLineCenterY, floorf(aSize.width *kToolImageSize), aSize.height -kLineCenterY - 1);
-            toolFrame = [[self class] rectForToolImage:tool withRect:toolFrame];
+            toolFrame = [[self class] rectForToolImage:aToolImage withRect:toolFrame];
             
 #if DEBUG_LEVEL >= 4
             CGContextSaveGState(context);
@@ -70,13 +67,13 @@ void HRSetRoundedRectanglePath(CGContextRef context,const CGRect rect,CGFloat ra
             CGContextStrokeRect(context, clipRect);
             CGContextRestoreGState(context);
 #endif
-        }
+
     }
     CGMutablePathRef path = CGPathCreateMutable();
     
     
-    if (tool) {
-        CGContextDrawImage(context, toolFrame, tool.CGImage);
+    if (aToolImage) {
+        CGContextDrawImage(context, toolFrame, aToolImage.CGImage);
         CGPathMoveToPoint(path, NULL, 2, toolFrame.origin.y-2);
         CGPathAddLineToPoint(path, NULL, toolFrame.origin.x, toolFrame.origin.y-2);
         CGPathCloseSubpath(path);

@@ -33,8 +33,12 @@ static NSString *kSectionColor = @"Colors";
 #define kVNOptionsCellSizeColorPicker             320.
 #define kVNOptionsCellItemPadding                 4.
 
+@class VNTextGraphicsOptionsView;
 @protocol VNTextGraphicsOptionsDelegate <NSObject>
-
+- (void) optionsPicker:(VNTextGraphicsOptionsView*)optionsPicker didChangeColor:(UIColor*)aColor;
+- (void) optionsPicker:(VNTextGraphicsOptionsView*)optionsPicker didChangeLineWidth:(CGFloat)lineWidth;
+- (void) optionsPicker:(VNTextGraphicsOptionsView*)optionsPicker didChangeFont:(UIFont*)font;
+- (void) optionsPicker:(VNTextGraphicsOptionsView*)optionsPicker didChangeFontSize:(CGFloat)fontSize;
 @end
 
 
@@ -77,18 +81,20 @@ typedef NS_OPTIONS(NSUInteger, VNOptionsPickerStyle) {
     CGFloat _sizeWidth;
     UIColor *_color;
     NSArray *_sections;
-    __strong NSString *_toolImage;
+    __strong UIImage *_toolImage;
     __strong UIButton *_selectedLineWidthButton;
+    __unsafe_unretained id <VNTextGraphicsOptionsDelegate> _delegate;
 }
 @property (nonatomic, assign, readwrite) VNOptionsPickerStyle style;
 
-- (id)initWithStyle:(VNOptionsPickerStyle)style andToolImage:(NSString*)aToolImage;
+- (id)initWithStyle:(VNOptionsPickerStyle)style andToolImage:(UIImage*)aToolImage;
 //@property (nonatomic, retain) NSString* unitsName; // default @"pt" if style  match VNOptionsPickerStyleFontName
+@property (nonatomic, assign) id <VNTextGraphicsOptionsDelegate> delegate;
 @property (nonatomic, retain) NSArray *sections;
-@property (nonatomic, retain, readonly) UIFont *font;
-@property (nonatomic, assign, readonly) CGFloat sizeStepper;
-@property (nonatomic, assign, readonly) CGFloat sizeWidth;
-@property (nonatomic, retain, readonly) UIColor *color;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, assign) CGFloat sizeStepper;
+@property (nonatomic, assign) CGFloat sizeWidth;
+@property (nonatomic, retain) UIColor *color;
 - (void) setFont:(UIFont *)font;
 @end
 

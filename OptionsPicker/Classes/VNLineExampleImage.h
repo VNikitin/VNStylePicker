@@ -17,7 +17,7 @@
 @interface VNLineExampleImage : UIImage
 
 + (UIImage*)solidLineWithWidth:(CGFloat)width withImageSize:(CGSize)aSize withColor:(UIColor*)aColor;
-+ (UIImage*)solidLineWithWidth:(CGFloat)width withImageSize:(CGSize)aSize withColor:(UIColor*)aColor toolImage:(NSString *)aToolImage;
++ (UIImage*)solidLineWithWidth:(CGFloat)width withImageSize:(CGSize)aSize withColor:(UIColor*)aColor toolImage:(UIImage *)aToolImage;
 + (UIImage*)solidSquareColor:(UIColor*)aColor forSize:(CGSize)aSize withRadius:(CGFloat)aRadius;
 + (UIImage*)solidSquareColor:(UIColor*)aColor forSize:(CGSize)aSize withRadius:(CGFloat)aRadius withFont:(UIFont*)aFont withRGBInfo:(BOOL)rgbInfoFlag;
 @end

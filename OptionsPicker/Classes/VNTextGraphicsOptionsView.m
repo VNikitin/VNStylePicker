@@ -20,10 +20,6 @@
     __strong NSIndexPath *_colorIndexPath;
 }
 @property (nonatomic, retain) NSArray *sectionNames;
-@property (nonatomic, retain, readwrite) UIFont *font;
-@property (nonatomic, assign, readwrite) CGFloat sizeStepper;
-@property (nonatomic, assign, readwrite) CGFloat sizeWidth;
-@property (nonatomic, retain, readwrite) UIColor *color;
 @end
 
 @implementation VNTextGraphicsOptionsView
@@ -34,9 +30,10 @@
 @synthesize style = _style;
 @synthesize sectionNames = _sectionNames;
 @synthesize sections = _sections;
+@synthesize delegate = _delegate;
 
 #pragma mark - Init
-- (id)initWithStyle:(VNOptionsPickerStyle)style andToolImage:(NSString*)aToolImage {
+- (id)initWithStyle:(VNOptionsPickerStyle)style andToolImage:(UIImage*)aToolImage {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         _style = style;
@@ -667,12 +664,19 @@
     [self selectButton:(UIButton*)sender];
     if ([(UIButton*)sender tag] >=0 && [(UIButton*)sender tag] < [kVNOptionsPickerDefaultWidths count] ) {
         self.sizeWidth = [[kVNOptionsPickerDefaultWidths objectAtIndex:[(UIButton*)sender tag]] floatValue];
+        if (_delegate && [_delegate respondsToSelector:@selector(optionsPicker:didChangeLineWidth:)]) {
+            [_delegate optionsPicker:self didChangeLineWidth:self.sizeWidth];
+        }
         [self.tableView reloadData];
     }
+    
 }
 - (void) stepperClicked:(id) sender {
     if ([sender isKindOfClass:[CMUpDownControl class]]) {
         self.sizeStepper = [(CMUpDownControl*)sender value];
+        if (_delegate && [_delegate respondsToSelector:@selector(optionsPicker:didChangeFontSize:)]) {
+            [_delegate optionsPicker:self didChangeFontSize:self.sizeStepper];
+        }
         [self.tableView reloadData];
     }
 }
@@ -680,6 +684,9 @@
 - (void) stepperLineWidthClicked:(id) sender {
     if ([sender isKindOfClass:[CMUpDownControl class]]) {
         self.sizeWidth = [(CMUpDownControl*)sender value];
+        if (_delegate && [_delegate respondsToSelector:@selector(optionsPicker:didChangeLineWidth:)]) {
+            [_delegate optionsPicker:self didChangeLineWidth:self.sizeWidth];
+        }
         _selectedLineWidthButton.layer.backgroundColor = [UIColor clearColor].CGColor;
         _selectedLineWidthButton.layer.borderColor = [UIColor clearColor].CGColor;
         _selectedLineWidthButton = nil;
@@ -739,22 +746,25 @@
     }]];
 
     [self.tableView reloadRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationNone];
+    if (_delegate && [_delegate respondsToSelector:@selector(optionsPicker:didChangeColor:)]) {
+        [_delegate optionsPicker:self didChangeColor:self.color];
+    }
 //    [self.tableView reloadData];
 }
 - (void)fontSelectTableViewController:(CMFontSelectTableViewController *)fontSelectTableViewController didSelectFont:(UIFont *)selectedFont {
     [self setFont:selectedFont];
+    if (_delegate && [_delegate respondsToSelector:@selector(optionsPicker:didChangeFont:)]) {
+        [_delegate optionsPicker:self didChangeFont:self.font];
+    }
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 - (void)fontStyleSelectTableViewController:(CMFontStyleSelectTableViewController *)fontStyleSelectTableViewController didSelectFont:(UIFont *)selectedFont {
     [self setFont:selectedFont];
+    if (_delegate && [_delegate respondsToSelector:@selector(optionsPicker:didChangeFont:)]) {
+        [_delegate optionsPicker:self didChangeFont:self.font];
+    }
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
-
-//- (UITableViewCell*)defaultCell {
-//    UITableViewCell *cell = [[UITableViewCell alloc] init];
-//    cell.accessoryType = UITableViewCellAccessoryNone;
-//    
-//}
 
 #pragma mark - Helpers
 
